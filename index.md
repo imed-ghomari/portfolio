@@ -2,6 +2,7 @@
 layout: default
 title: Home
 ---
+<!-- Rebuild trigger -->
 
 <div class="posts">
   <h1>Professional Projects</h1>
