@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Cross Player for Obsidian
-date: 2024-09-05
+date: 2026-01-15
 categories: personal technology
 ---
 
-A powerful media player plugin for Obsidian that transforms a local folder into a managed playback queue. Designed for efficient learning and media consumption, it supports video and audio files with advanced playback controls, YouTube downloading, and storage management.
+A powerful media player plugin for Obsidian that transforms a local folder into a managed playback queue that persists playback across devices. Designed for efficient learning and media consumption, it supports video and audio files with advanced playback controls, YouTube downloading, and storage management.
 
 **[View on GitHub](https://github.com/imed-ghomari/cross-player-obsidian)**
 

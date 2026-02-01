@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SuperAdd for Obsidian
-date: 2026-02-01
+date: 2025-11-01
 categories: personal productivity
 ---
 
