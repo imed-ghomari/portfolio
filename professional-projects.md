@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Professional Projects
+permalink: /professional-projects/
 hide_title: true
 ---
 

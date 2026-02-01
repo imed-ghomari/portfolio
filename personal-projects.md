@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Personal Projects
+permalink: /personal-projects/
 hide_title: true
 ---
 

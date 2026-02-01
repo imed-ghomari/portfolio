@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
 I am Imed Ghomari, focused on leveraging technology and data to solve complex problems in healthcare and personal workflow optimization.
