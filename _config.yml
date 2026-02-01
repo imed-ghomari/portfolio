@@ -1,12 +1,14 @@
 title: Imed Ghomari
 description: Portfolio of Professional and Personal Projects
-baseurl: "/portfolio" # Change this if your repo name is different
+baseurl: /portfolio
 url: "https://imed-ghomari.github.io"
 github_username: imed-ghomari
 
 # Hyde Theme Settings
 sidebar_home: true
 # color schemes: 08-hyde, 09-blue, 0a-green, 0b-aqua, 0c-teal, 0d-orange, 0e-red, 0f-pink
+# sidebar colors: 08-hyde (standard black), 09, 0a, 0b, 0c, 0d, 0e, 0f
+theme_color: "08-hyde"
 layout_reverse: false
 sidebar_overlay: false
 
