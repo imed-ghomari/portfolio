@@ -12,11 +12,7 @@ theme_color: "08-hyde"
 layout_reverse: false
 sidebar_overlay: false
 
-# Remote theme setting for GitHub Pages
-remote_theme: poole/hyde
-
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-feed
 
