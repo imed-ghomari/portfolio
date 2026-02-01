@@ -3,46 +3,18 @@ layout: default
 title: Home
 ---
 
-# Welcome to my Portfolio
+<div class="posts">
+  {% for post in site.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-I am a professional with experience in clinical data analysis, digital coordination, and media systems development. Below is a summary of my key projects.
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
----
-
-## Professional Projects
-
-### Micro-Costing Study in Breast Cancer Management
-- Conducted a detailed micro-costing analysis to estimate total average costs of breast cancer patient management.
-- Worked at population, patient, and procedure levels.
-- Addressed missing data using imputation techniques implemented in Python.
-- Designed sensitivity analyses (including tornado diagrams) with cost categories such as inpatient care, surgery, radiotherapy, outpatient visits, diagnostics, and travel.
-- Focused on methodological rigor suitable for publication.
-
-### Budget Impact Model (BIM) for Rare Disease Treatment
-- Developed a budget impact model for a rare disease treatment (e.g. burosumab).
-- Identified epidemiological parameters, treatment displacement assumptions, and cost drivers.
-- Reflected critically on sourcing upper/lower bounds via systematic literature reviews (SLRs) while avoiding outlier bias.
-- Built structured sensitivity analysis tables with source traceability.
-
-### Digital Coordinator at Infusion Digitale
-- Managed digital coordination, building on experience from roles at Roche, Pfizer, and Rouiba Hospital.
-
----
-
-## Personal Projects
-
-### Cross-Device Media Consumption System (Desktop → Android)
-- Designed a personal media workflow where playback progress, consumption state, and ordering are stored in structured JSON.
-- Synced media files and metadata across devices using Syncthing.
-- Explored interoperability with existing Android players vs. building a custom player.
-- Evaluated ExoPlayer, Video.js, PyVidPlayer2, and Kivy-based Android packaging with performance and format-support trade-offs.
-
-### Desktop Media Player Application
-- Built a desktop application to manage long-form video consumption.
-- Features include directory-based media ingestion, persistent playback position, and “Consumed / not consumed” tracking.
-- Iteratively improved UI/UX with focus on minimalism and professional layout.
-
-### Structured Personal Improvement Framework - **Roadmap to Janna**
-- A GitHub project providing a step-by-step system for success in Muslim life, including an integrated Obsidian vault for personal knowledge management.
-- Designed a multi-initiative system to improve character traits, worship consistency, and personal discipline.
-- Quantified progress using percentages and score aggregation with gamification mechanics.
+    {{ post.excerpt }}
+  </article>
+  {% endfor %}
+</div>
