@@ -10,8 +10,22 @@ layout: default
 
 <div class="related">
   <h2>Related Posts</h2>
+  {% assign current_type = "" %}
+  {% if page.categories contains "personal" %}
+  {% assign current_type = "personal" %}
+  {% elsif page.categories contains "professional" %}
+  {% assign current_type = "professional" %}
+  {% endif %}
+
+  {% if current_type != "" %}
+  {% assign related_posts = site.posts | where_exp: "post", "post.categories contains current_type" | where_exp: "post",
+  "post.url != page.url" %}
+  {% else %}
+  {% assign related_posts = site.related_posts %}
+  {% endif %}
+
   <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
+    {% for post in related_posts limit:3 %}
     <li>
       <h3>
         <a href="{{ post.url | relative_url }}">
